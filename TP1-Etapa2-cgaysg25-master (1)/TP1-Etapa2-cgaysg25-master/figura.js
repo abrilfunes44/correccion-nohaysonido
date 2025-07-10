@@ -18,7 +18,7 @@ class Figura {
         this.tipo = (this.cual % 2 === 0) ? 'par' : 'impar'; // Alterna entre círculo y cuadrado
         this.tiempoCreacion = millis();
         this.delayCrecimiento = random(0, 2000); 
-        this.creciendo = false;
+        //this.creciendo = false;
     }
 
        dibujar() {
@@ -102,13 +102,15 @@ class Figura {
     }
 
 
-    crecer() {
+crecer() {
+
         if (this.an < this.maxAn) {
-            this.an += random(0.5, 3);
+            this.an += random(0.1, 5);
         }
         if (this.al < this.maxAn) {
-            this.al += random(0.5, 3);
+            this.al += random(0.1, 5);
         }
     }
 
 }
+

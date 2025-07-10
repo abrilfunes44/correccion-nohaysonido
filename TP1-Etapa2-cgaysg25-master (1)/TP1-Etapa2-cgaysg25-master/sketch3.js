@@ -73,7 +73,6 @@ function draw() {
     //text(texto, 50,50);
 
     haySonido = amp > umbral;
-    noHaySonido = !haySonido;
 
     let empezoElSonido = !antesHabiaSonido && haySonido;
 

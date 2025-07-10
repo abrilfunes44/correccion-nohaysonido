@@ -74,7 +74,6 @@ class Figura {
     pop();
 
     if (haySonido) {
-        // Cuando HAY sonido → crecer
         this.crecer();
     }
 }
